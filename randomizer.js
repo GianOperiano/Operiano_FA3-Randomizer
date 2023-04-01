@@ -18,8 +18,8 @@ if ((num1 > num3 && num1 == num2) || (num1 > num2 && num1 == num3) || (num1 > nu
     document.getElementById("highest").innerHTML += " (" + num1 + ").";
 }
 if (num2 > num1 && num2 > num3) {
-    document.getElementById("highest").innerHTML += " Player2 (" + num2 + ").";
     var highest = num2;
+    document.getElementById("highest").innerHTML += " Player2 (" + num2 + ").";
 }
 if ((num3 > num1 && num3 == num2) || (num3 > num2 && num3 > num1)) {
     document.getElementById("highest").innerHTML += " Player3";
