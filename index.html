@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+
+    <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+    font-family: Verdana;
+}
+
+    h1 {
+    background-color: rgb(212, 175, 55);
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+    p {
+    text-align: center;
+}
+
+    #margin {
+    text-align: center;
+    margin: 0px 100px;
+}
+
+    #layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .nums {
+    background-color: rgb(212, 175, 55);
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 20px;
+}
+
+    hr {
+    border-color: rgb(0, 0, 0);
+}
+</style>
+</head>
+<body>
+    <h1>A Game of Dungeons and Dragons</h1>
+    <p id="margin">Three players are playing a game of Dungeons and Dragons. After playing for a while, all three of their characters got stuck in a death room. The Dungeon Master told them that each of them must roll the 20-sided dice once, and whoever gets the highest roll will survive. He also states that if two or more players get the same number, then the players will still be declared survivors.</p>
+    <p>Displayed here are the value of each player's roll:</p>
+    <div id="layout">
+        <div class="nums">
+            <p>Player1</p>
+            <hr>
+            <p id="num1"></p>
+        </div>
+        <div class="nums">
+            <p>Player2</p>
+            <hr>
+            <p id="num2"></p>
+        </div>
+        <div class="nums">
+            <p>Player3</p>
+            <hr>
+            <p id="num3"></p>
+        </div>
+    </div>
+    
+    <p id="highest">The player with the highest value is: </p>
+    <p id="alphabet">The first letter of the name of the survivor/s is/are: </p>
+    <p id="ticktock">The time that the game finished is around: </p>
+    <script src="randomizer.js"></script>
+</body>
+</html>
